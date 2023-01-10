@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script src="https://kit.fontawesome.com/222e0d65f7.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+            <!-- 시간 유저에게 인사 아이콘  -->
+            <div id="nav">
+                <div class="nWidth">
+                    <span id="clock">
+                        00:00
+                    </span>
+                    <span id="clockSec">(00)</span>
+
+                </div>
+                <div class="nWidth" >
+                    <h1 id="greeting" class="hidden"></h1>
+                    <form id="login-form"  class="hidden" >
+                        <!-- input의 입력 유효성을 검사하기 위해서는 form 안에 input이 있어야함 -->
+                        <!--  required maxlengh를 이용하여 입력 글자수의 max 지정 -->
+                        <input required maxlength="15" type="text" placeholder="What is your name?" id="logIN">
+                        <button>Log In</button>
+                    </form>
+                </div>
+                <div id="link" class="nWidth">
+                    <div id="linkBox">
+                        <div id="iconbox"></div>
+                        <i id="plusIcon" class="fa-solid fa-plus"></i>
+                    </div>
+                    <div id="linkplus" class="hidden" >
+                        <h4>이름(3글자):</h4>
+                        <input id="name" type="text" placeholder="저장될 이름을 입력하세요" required maxlength="3" >
+                        <h4>주소:</h4>
+                        <input id="linkinput" type="text" placeholder="사이트 주소를 입력하세요" required >
+                        <div id="btnCSS">
+                            <button id="linkBtn">저장</button>
+                            <button id="clear">전체삭제</button>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div id="main">
+                <div id="inBox">
+                    <form id="search"  method="GET">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input name="q" type="text" placeholder="Web search">
+                        <div id="linklist" class="hidden">
+                            <div id="mainlink"> [<span> 네이버</span> ]</div>
+                            
+                            <div id="sitelist">
+                                <div id="naver" class="text">네이버</div>
+                                <div id="google" class="text">구글</div>
+                                <div id="daum" class="text">다음</div>
+                            </div>
+                            
+                        </div>
+                        <i class="fa-solid fa-paw selectLink"></i>
+                    </form>
+    
+                    <div id="quotes">
+                        <span>doListBox
+                
+                        </span>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--  날씨 투두  -->
+            <div id="buttom">
+                <div id="weather">
+                    <span></span>
+                    <span id="text"></span>
+                </div>
+                <div id="todoListBox" class="hidden">
+                    <div id="today">
+                        <h2>TodoList</h2>
+
+                    </div>
+                    <div>
+                        <ul id="todo-list"> 
+                        </ul>
+                        <form id="todo-form">
+                            <input id="todoInput"type="text" placeholder="Write a To Do and Press Enter" required>
+                        </form>
+                    </div>
+                    
+                    
+                </div>
+                <div>
+                    <div id="todoBut" ><span>Todo</span></div>
+
+                </div>
+            </div>
+    <script src="./js/clock.js"></script>
+    <script src="./js/greetings.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/link.js"></script>
+</body>
+</html>
