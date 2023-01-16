@@ -202,23 +202,29 @@ li span{
     
 }
 .iconSize{
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
 }
 #linkBox{
     display: flex;
     justify-content: end;
-    width: 250px;
+    width: 300px;
 }
 #iconbox{
-    display: flex;
-    justify-content: end;
+    display: block;
+    
 
 }
-#linkBox div{
-    width: 40px;
-    padding-right: 5px;
-    font-size: small;
+#iconbox div{
+    display: flex;
+    width: 55px;
+    font-size:small;
+    justify-content: end;
+}
+#iconbox div button{
+    font-size: x-small;
+    padding: 0%;
+    margin: 0%;
 }
 
 
